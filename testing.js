@@ -61,7 +61,7 @@ spanCount.id="count";
 pSpecial.appendChild(spanCount);
 
 let heading3 = document.createElement("h3");
-heading3.innerText="Click on the pencil animation below!";
+heading3.innerText="Scroll down and click on the animated pencil below!";
 
 
 div5.appendChild(heading2);
