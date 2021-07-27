@@ -1,0 +1,534 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+  background-image: url("sky.gif");
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.my-phone-resolution{
+  background-image: url("sky.gif");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.fit-to-parentContainer{
+  width: 100vw;
+
+
+}
+
+.ux-obj-sun{
+  width: 70%;
+  position: absolute;
+
+top: -20%;
+left: -35%;
+ 
+}
+
+.ui-obj-input-container{
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  height: 10%;
+  background-color: burlywood;
+  margin: 10% 5% 0 5%;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.ui-obj-input-container-subsec {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  height: 10%;
+  background-color: burlywood;
+  margin: 0 5% 0 15%;
+  padding: 5px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.requirement{
+  background-color: floralwhite;
+  border-radius: 10px;
+  padding: 2% 0 3% 5%;
+}
+
+h2{
+  color: rgb(5, 44, 117);
+  margin-top: 0px;
+}
+
+h3{
+  color: rgb(5, 44, 117);
+  margin-top: 0;
+}
+
+.ui-obj-input-field {
+  border-radius: 10px 10px 0 0;
+  height: 30px;
+  background-color: rgba(4, 230, 230, 0.37);
+  border-style: none none solid none;
+}
+
+textarea{
+ 
+
+
+  background-color: rgba(146, 241, 241, 0.192);
+  border-style: none none solid none;
+  border-radius: 10px 10px 0 0;
+  height: 90px;
+  
+  resize: none;
+
+
+  display:block;
+  width:200px;
+   height:100px; 
+  
+  
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.ui-obj-images-footer{
+  text-align: center;
+ 
+}
+
+.ui-obj-render-btn{
+  width: 30%;
+  height: 50%;
+  border-radius: 50px;
+  margin-top: 10% ;
+  margin-bottom: 10%;
+}
+
+
+
+.ui-obj-render-images{
+  width: 20%;
+  border-radius: 10%;
+
+}
+
+
+.ui-obj-images{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+
+.portal{
+
+    animation: yourAnimation 2s ease-in 1s 1 forwards;
+    opacity: 0;
+}
+
+@keyframes yourAnimation {
+    0%{
+        
+     
+      
+        transform: scale(0.0);
+        opacity: 0;
+    }
+
+    100%{
+   
+
+  
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.portal2{
+
+  animation: yourAnimation 2s ease-in 2s 1 forwards;
+  opacity: 0;
+}
+
+@keyframes yourAnimation {
+  0%{
+      
+   
+    
+      transform: scale(0.0);
+      opacity: 0;
+  }
+
+  100%{
+ 
+
+
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+
+.portal3{
+
+  animation: yourAnimation 2s ease-in 3s 1 forwards;
+  opacity: 0;
+}
+
+@keyframes yourAnimation {
+  0%{
+      
+   
+    
+      transform: scale(0.0);
+      opacity: 0;
+  }
+
+  100%{
+ 
+
+
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+
+.portal4{
+
+  animation: yourAnimation 2s ease-in 4s 1 forwards;
+  opacity: 0;
+}
+
+@keyframes yourAnimation {
+  0%{
+      
+   
+    
+      transform: scale(0.0);
+      opacity: 0;
+  }
+
+  100%{
+ 
+
+
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+
+
+
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+
+
+    html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+    
+    body{
+      background-image: url("sky.gif");
+      background-size: cover;
+      background-position: center;
+    
+    }
+    
+    
+    
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .my-phone-resolution{
+      background-image: url("sky.gif");
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+    
+    .fit-to-parentContainer{
+      width: 100vw;
+    
+    
+    }
+    
+    .ux-obj-sun{
+      width: 70%;
+      position: absolute;
+    
+ top: -70%;
+ left: -30%;
+     
+    }
+    
+    .ui-obj-input-container{
+      position: relative;
+      z-index: 1;
+      width: 50%;
+      height: 10%;
+      background-color: burlywood;
+      margin: 5% 5% 0 25%;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    
+    }
+    
+    .ui-obj-input-container-subsec {
+      position: relative;
+      z-index: 1;
+      width: 30%;
+      height: 10%;
+      background-color: burlywood;
+      margin: 0 5% 0 36%;
+      padding: 5px;
+      border-radius: 0 0 10px 10px;
+    
+    }
+    
+    .requirement{
+      background-color: floralwhite;
+      border-radius: 10px;
+      padding: 2% 0 3% 5%;
+    }
+    
+    h2{
+      color: rgb(5, 44, 117);
+      margin-top: 0px;
+    }
+    
+    h3{
+      color: rgb(5, 44, 117);
+      margin-top: 0;
+    }
+    
+    .ui-obj-input-field {
+      border-radius: 10px 10px 0 0;
+      height: 30px;
+      background-color: rgba(4, 230, 230, 0.37);
+      border-style: none none solid none;
+  
+    }
+    
+    textarea{
+     
+    
+    
+      background-color: rgba(146, 241, 241, 0.192);
+      border-style: none none solid none;
+      border-radius: 10px 10px 0 0;
+      height: 90px;
+      
+      resize: none;
+    margin: auto;
+    
+      display:block;
+      width: fit-content;
+       height:100px; 
+      
+      
+    }
+    
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+      border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    
+    .ui-obj-images-footer{
+      text-align: center;
+     
+    }
+    
+    .ui-obj-render-btn{
+      width: 8%;
+      height: 18%;
+      border-radius: 50px;
+      margin-top: 3% ;
+      margin-bottom: 10%;
+    
+    }
+    
+    
+    
+    .ui-obj-render-images{
+      width: 20%;
+      border-radius: 10%;
+    
+    }
+    
+    
+    .ui-obj-images{
+      display: flex;
+     flex-direction: column;
+     align-items: center;
+    
+    }
+    
+    
+     .portal{
+    
+        animation: yourAnimation 2s ease-in 1s 1 forwards;
+        opacity: 0;
+    }
+    
+    @keyframes yourAnimation {
+        0%{
+            
+         
+          
+            transform: scale(0.0);
+            opacity: 0;
+        }
+    
+        100%{
+       
+    
+      
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    .portal2{
+    
+      animation: yourAnimation 2s ease-in 2s 1 forwards;
+      opacity: 0;
+    }
+    
+    @keyframes yourAnimation {
+      0%{
+          
+       
+        
+          transform: scale(0.0);
+          opacity: 0;
+      }
+    
+      100%{
+     
+    
+    
+          transform: scale(1);
+          opacity: 1;
+      }
+    }
+    
+    
+    .portal3{
+    
+      animation: yourAnimation 2s ease-in 3s 1 forwards;
+      opacity: 0;
+    }
+    
+    @keyframes yourAnimation {
+      0%{
+          
+       
+        
+          transform: scale(0.0);
+          opacity: 0;
+      }
+    
+      100%{
+     
+    
+    
+          transform: scale(1);
+          opacity: 1;
+      }
+    }
+    
+    
+    .portal4{
+    
+      animation: yourAnimation 2s ease-in 4s 1 forwards;
+      opacity: 0;
+    }
+    
+    @keyframes yourAnimation {
+      0%{
+          
+       
+        
+          transform: scale(0.0);
+          opacity: 0;
+      }
+    
+      100%{
+     
+    
+    
+          transform: scale(1);
+          opacity: 1;
+      }
+    }
+    
+     
+    
+    
+
+
+
+}
