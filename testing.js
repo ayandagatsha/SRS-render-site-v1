@@ -114,4 +114,27 @@ function count(e){
 }
 
 
+//render fx
+let btn = document.getElementsByClassName("ui-obj-render-btn");
+let spec;
+let projectName;
+btn[0].addEventListener("click",function(){
+
+    var i = document.getElementById("textinput");
+    
+    console.log(i.value);
+
+spec = i.value;
+
+projectName= input1.value;
+
+heading2.innerText= projectName
+heading3.innerText=spec;
+    div5.removeChild(textar);
+    div5.removeChild(pSpecial);
+    div.removeChild(div3);
+    div5.appendChild(pSpecial);
+    pSpecial.innerText="NB: Refresh/reload page to re-render anything else."
+    })
+
 
