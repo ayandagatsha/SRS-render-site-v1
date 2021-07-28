@@ -61,7 +61,7 @@ spanCount.id="count";
 pSpecial.appendChild(spanCount);
 
 let heading3 = document.createElement("h3");
-heading3.innerText="Scroll down and click on the animated pencil below!";
+heading3.innerText="Click the render file below, to save and render your SRS data or click the load button to render the last saved SRS data! Data is saved and read from your local device. So if using this site on a different device, your recent save data won't be available.";
 
 
 div5.appendChild(heading2);
@@ -80,16 +80,22 @@ div6.classList.add("ui-obj-images");
 
 let imge2 = document.createElement("img");
 
-imge2.src="render.gif"
+imge2.src="render.jpg"
 
+let imge3 = document.createElement("img");
+
+imge3.src="load.png"
+
+imge3.classList.add( "ui-obj-load-btn")
 imge2.classList.add("ui-obj-render-btn");
-imge2.id="hover";
+
 
 let div7 = document.createElement("div");
 div7.classList.add("ui-obj-images-footer");
 
 
 div6.appendChild(imge2);
+div6.appendChild(imge3);
 div6.appendChild(div7);
 
 
@@ -102,6 +108,7 @@ var i = document.getElementById("textinput");
 var c = document.getElementById("count");
 c.innerHTML = maxchar;
     
+
 i.addEventListener("keydown",count);
 
 function count(e){
@@ -112,7 +119,6 @@ function count(e){
        c.innerHTML = maxchar - len-1;   
     }
 }
-
 
 //render fx
 let btn = document.getElementsByClassName("ui-obj-render-btn");
@@ -128,6 +134,10 @@ spec = i.value;
 
 projectName= input1.value;
 
+localStorage.setItem("Project Name", projectName);
+localStorage.setItem("Specification", spec);
+
+
 heading2.innerText= projectName
 heading3.innerText=spec;
     div5.removeChild(textar);
@@ -137,4 +147,29 @@ heading3.innerText=spec;
     pSpecial.innerText="NB: Refresh/reload page to re-render anything else."
     })
 
+
+    //loadfx
+let btn2 = document.getElementsByClassName("ui-obj-load-btn");
+
+
+
+
+btn2[0].addEventListener("click",function(){
+
+    let projName = localStorage.getItem("Project Name");
+    let projSpec = localStorage.getItem("Specification");
+    
+
+
+
+heading2.innerText= projName
+heading3.innerText=projSpec;
+    div5.removeChild(textar);
+    div5.removeChild(pSpecial);
+    div.removeChild(div3);
+    div5.appendChild(pSpecial);
+    pSpecial.innerText="NB: Refresh/reload page to re-render anything else."
+    div6.removeChild(imge2);
+    div6.removeChild(imge3);
+    })
 
